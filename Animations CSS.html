@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #moveMe{
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            animation: mymove 5s infinite;
+            -webkit-animation: mymove 5s infinite;
+            -ms-animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            from { left: 0px; }
+            to { left: 300px; }
+            0% {background-color: orangered; transform: rotate(0deg);}
+            100% {background-color: orchid; transform: rotate(160deg);}
+        }
+        @-webkit-keyframes mymove {
+            from { left: 0px; }
+            to { left: 300px; }
+            0% {background-color: orangered; transform: rotate(0deg);}
+            100% {background-color: orchid; transform: rotate(160deg);}
+        }
+        @-ms-keyframes mymove {
+            from { left: 0px; }
+            to { left: 300px; }
+            0% {background-color: orangered; transform: rotate(0deg);}
+            100% {background-color: orchid; transform: rotate(160deg);}
+        }
+    </style>
+</head>
+<body>
+    <div id="moveMe"></div>
+</body>
+</html>
